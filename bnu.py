@@ -1,3 +1,4 @@
+# 爬取北师大快讯四月份的新闻标题，并存入txt文件
 import requests
 from bs4 import BeautifulSoup
 # 在windows下面，新文件的默认编码是gbk，
