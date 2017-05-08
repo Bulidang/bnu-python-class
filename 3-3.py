@@ -8,7 +8,7 @@ lst = '联想 戴尔 神舟 惠普 华硕 微星 炫龙 雷神'.split(' ')
 brands = {k: v for k, v in zip(lst, [[] for i in range(9)])}
 # brands = {'小米': [], '联想': [], '华硕': [], '惠普': [], '戴尔': [], 'Apple': []}
 
-for i in list(range(1, 10, 2)):
+for i in range(1, 10, 2):
     url = 'https://search.jd.com/Search?keyword=笔记本电脑\
     15.6寸&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&offset=3&suggest=1.def.0.T11&page={}'.format(i)
     html = requests.get(url)
